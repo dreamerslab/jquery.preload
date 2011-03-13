@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQuery Preload Plugin Demo</title>
+    <style type="text/css">
+      #wrap{
+        width: 960px;
+        margin: 0 auto 50px;
+      }
+      #info{
+        text-align: center;
+        margin: 50px 0 0;
+      }
+      .gallery{
+        height: 330px;
+      }
+      .photo{
+        height: 300px;
+        width: 300px;
+        float: left;
+        margin: 0 10px 0 0;
+      }
+      #photo-1{
+        background-image: url('http://farm2.static.flickr.com/1047/618175800_09d9f0d704.jpg');
+      }
+      #photo-1.hover{
+        background-image: url('http://farm3.static.flickr.com/2066/1997997751_4eed467567.jpg');
+      }
+      #photo-2{
+        background-image: url('http://farm3.static.flickr.com/2158/2433613083_9a737679bd.jpg');
+      }
+      #photo-2.hover{
+        background-image: url('http://farm4.static.flickr.com/3362/3252938723_64c586a31e.jpg');
+      }
+      #photo-3{
+        background-image: url('http://farm4.static.flickr.com/3435/3264729331_a769f2e67d.jpg');
+      }
+      #photo-3.hover{
+        background-image: url('http://farm4.static.flickr.com/3616/3522284481_a46cbc9486.jpg');
+      }
+      #photo-4{
+        background-image: url('http://farm4.static.flickr.com/3302/3491080879_fff3c754fc.jpg');
+      }
+      #photo-4.hover{
+        background-image: url('http://farm3.static.flickr.com/2754/4176113616_ee5799ed03.jpg');
+      }
+      #photo-5{
+        background-image: url('http://farm5.static.flickr.com/4033/4558063598_2288db4d39.jpg');
+      }
+      #photo-5.hover{
+        background-image: url('http://farm5.static.flickr.com/4053/4210707381_1b41574e05.jpg');
+      }
+      #photo-6{
+        background-image: url('http://farm5.static.flickr.com/4059/4437664124_c12239025a.jpg');
+      }
+      #photo-6.hover{
+        background-image: url('http://farm5.static.flickr.com/4044/4290957336_135e7c585a.jpg');
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>
+        jQuery Preload Plugin Demo
+      </h1>
+      <p>
+        Try to hover on those images to see the differences. 
+        You might need to clear the browser cache to make the script to take effects.
+      </p>
+      <h2>Without images preloaded</h3>
+      <p id="without-preload" class="gallery">
+        <span id="photo-1" class="photo"></span>
+        <span id="photo-2" class="photo"></span>
+        <span id="photo-3" class="photo"></span>
+      </p>
+      <h2>With images preload</h3>
+      <p id="with-preload" class="gallery">
+        <span id="photo-4" class="photo"></span>
+        <span id="photo-5" class="photo"></span>
+        <span id="photo-6" class="photo"></span>
+      </p>
+      <h3 id="info">
+        Demo provides by <a href="http://dreamerslab.com/">DreamersLab</a>
+      </h3>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.preload.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      // wrap everything in document ready event
+      $( function(){
+        // hover effect - change background image
+        $( '.photo' ).hover( function(){
+          $( this ).addClass( 'hover' );
+        }, function(){
+          $( this ).removeClass( 'hover' );
+        });
+      
+        // THE ACTUAL DEMO CODE
+        $.preload( 'http://farm3.static.flickr.com/2754/4176113616_ee5799ed03.jpg',
+          'http://farm5.static.flickr.com/4053/4210707381_1b41574e05.jpg',
+          'http://farm5.static.flickr.com/4044/4290957336_135e7c585a.jpg'
+        );
+      });
+      
+    </script>
+    <script type="text/javascript" charset="utf-8">
+      // google analytics
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20960410-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
