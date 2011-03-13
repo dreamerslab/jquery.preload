@@ -1,6 +1,6 @@
 # jQuery Preload Plugin
 
-A jQuery plugin that preload images.
+A jQuery plugin that preloads images.
 
 ## Description
 
@@ -22,19 +22,20 @@ There are times that we need to preload images to bring better user experience. 
 
 <!-- -->
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="path-to-file/jquery.preload.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="path-to-file/jquery.preload.js"></script>
 
 ## Usage
 Example code:
-    
-    $.preload( '/img/space.gif',
-      '/img/loading.gif',
-      '/img/header-bg.png',
-      '/img/avatar.jpg'
-    );
+      
+      $.preload( '/img/space.gif',
+        '/img/loading.gif',
+        '/img/header-bg.png',
+        '/img/avatar.jpg'
+      );
 
 ## Demo
+Please see demo.html
 
 ## License
 
