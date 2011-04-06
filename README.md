@@ -39,8 +39,8 @@ Example code:
  - Online version please take a look at [this](http://dreamerslab.com/demos/preload-images-with-jquery-preload-plugin)
 
 ## Documentation
-  - There is a syntax highlight version, please see [this post](http://dreamerslab.com/blog/en/preload-images-with-jquery-preload-plugin/).
-  - For chinese version please go [here](http://dreamerslab.com/blog/tw/preload-images-with-jquery-preload-plugin/).
+  - There is a syntax highlight version, please see [this post](http://dreamerslab.com/blog/en/preload-images-with-jquery-preload-plugin/)
+  - For chinese version please go [here](http://dreamerslab.com/blog/tw/preload-images-with-jquery-preload-plugin/)
 
 ## License
 
