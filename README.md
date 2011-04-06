@@ -35,7 +35,8 @@ Example code:
       );
 
 ## Demo
-Please see demo.html
+ - Please see demo.html
+ - Online version please take a look at [this](http://dreamerslab.com/demos/preload-images-with-jquery-preload-plugin)
 
 ## Documentation
   - There is a syntax highlight version, please see [this post](http://dreamerslab.com/blog/en/preload-images-with-jquery-preload-plugin/).
