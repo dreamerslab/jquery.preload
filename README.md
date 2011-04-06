@@ -37,6 +37,10 @@ Example code:
 ## Demo
 Please see demo.html
 
+## Documentation
+  - There is a syntax highlight version, please see [this post](http://dreamerslab.com/blog/en/preload-images-with-jquery-preload-plugin/).
+  - For chinese version please go [here](http://dreamerslab.com/blog/tw/preload-images-with-jquery-preload-plugin/).
+
 ## License
 
 The expandable plugin is licensed under the MIT License (LICENSE.txt).
