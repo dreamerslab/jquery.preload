@@ -1,0 +1,18 @@
+{
+  "name": "preload",
+  "version": "1.0.2",
+  "title": "jQuery Preload Plugin",
+  "author": "dreamerslab <ben@dreamerslab.com>",
+  "licenses": [{
+    "type": "MIT",
+    "url": "LICENSE.txt"
+  }],
+  "dependencies": {
+    "jquery": ">=1.2.3"
+  },
+  "description": "",
+  "keywords": [ 
+    "preload", "img preload", "image preload"
+  ],
+  "homepage": "http://dreamerslab.com/blog/preload-images-with-jquery-preload-plugin/"
+}
