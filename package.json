@@ -1,6 +1,6 @@
 {
   "name"    : "preload",
-  "version" : "1.0.2",
+  "version" : "1.0.3",
   "title"   : "jQuery Preload Plugin",
   "author"  : "dreamerslab <ben@dreamerslab.com>",
   "licenses": [{
