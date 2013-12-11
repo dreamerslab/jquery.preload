@@ -73,6 +73,10 @@ Example code:
       ]);
 
 
+## Credit
+
+- mitzip
+
 
 ## License
 

@@ -2,7 +2,7 @@
 
 ## 1.0.3
 
-* Add `Array as argument` support
+* Add `Array as argument` support, thanks to `mitzip`
 
 
 
