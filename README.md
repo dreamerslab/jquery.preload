@@ -11,23 +11,27 @@ There are times that we need to preload images to bring better user experience. 
 
 
 ## Demo
+
  - Please see demo.html
  - Live demo please take a look at [this](http://dreamerslab.com/demos/preload-images-with-jquery-preload-plugin)
 
 
 
 ## Documentation
+
   - There is a syntax highlight version, please see [this post](http://dreamerslab.com/blog/en/preload-images-with-jquery-preload-plugin/)
   - For chinese version please go [here](http://dreamerslab.com/blog/tw/preload-images-with-jquery-preload-plugin/)
 
 
 
 ## Requires
+
   - jQuery 1.2.3+
 
 
 
 ## Browser Compatibility
+
   - [Firefox](http://mzl.la/RNaI) 2.0+
   - [Internet Explorer](http://bit.ly/9fMgIQ) 6+
   - [Safari](http://bit.ly/gMhzVR) 3+
@@ -37,6 +41,7 @@ There are times that we need to preload images to bring better user experience. 
 
 
 ## Installation
+
   - First, make sure you are using valid [DOCTYPE](http://bit.ly/hQK1Rk)
   - Include nessesary JS files
 
@@ -48,13 +53,24 @@ There are times that we need to preload images to bring better user experience. 
 
 
 ## Usage
+
 Example code:
 
-      $.preload( '/img/space.gif',
+      $.preload(
+        '/img/space.gif',
         '/img/loading.gif',
         '/img/header-bg.png',
         '/img/avatar.jpg'
       );
+
+      // or
+
+      $.preload([
+        '/img/space.gif',
+        '/img/loading.gif',
+        '/img/header-bg.png',
+        '/img/avatar.jpg'
+      ]);
 
 
 
